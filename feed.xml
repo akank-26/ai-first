@@ -5,7 +5,15 @@
   <link>https://akank-26.github.io/ai-first/</link>
   <description>Clear, concise, and credible insights on what matters in AI.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 28 Sep 2026 15:32:27 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 15:47:53 +0000</lastBuildDate>
+
+  <item>
+    <title>Open models do most of the work. Closed models still get paid</title>
+    <link>https://akank-26.github.io/ai-first/issues/2026-09-28-open-vs-closed-models/</link>
+    <guid isPermaLink="true">https://akank-26.github.io/ai-first/issues/2026-09-28-open-vs-closed-models/</guid>
+    <pubDate>Mon, 28 Sep 2026 08:00:00 +0000</pubDate>
+    <description>Open-weight AI now handles most developer tokens and runs about four months behind the frontier. It wins on price for some jobs but not all. Here&#39;s how to choose.</description>
+  </item>
 
   <item>
     <title>Agents can work for 12 hours. Most companies can&#39;t use them yet</title>

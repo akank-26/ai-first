@@ -1,0 +1,139 @@
+{
+  "slug": "open-vs-closed-models",
+  "date": "2026-09-28",
+  "title": "Open models do most of the work. Closed models still get paid",
+  "dek": "Open-weight AI now handles most developer tokens and runs about four months behind the frontier. It wins on price for some jobs but not all. Here's how to choose.",
+  "tldr": [
+    "Closed models still hold the top spot: Claude Opus 5.5 scores 58 on the Artificial Analysis Intelligence Index, and the best open model, Xiaomi's MiMo-V2.6-Pro, scores 46 [^1] [^2].",
+    "The gap is about four months. Open models match what closed models could do a season earlier [^3].",
+    "In August, open-weight models ran 56% of tokens on Vercel's AI Gateway but took only 14% of the spend [^4]."
+  ],
+  "key_numbers": [
+    { "value": "58 vs 46", "label": "Top closed vs top open model score", "context": "Artificial Analysis Intelligence Index", "source": 1 },
+    { "value": "~4 mo", "label": "How far open models trail the frontier", "context": "average since Jan 2026", "source": 3 },
+    { "value": "56% / 14%", "label": "Open-weight share of tokens vs spend", "context": "Vercel AI Gateway, Aug 2026", "source": 4 },
+    { "value": "12 pts", "label": "How much less often open models reach production", "context": "a tooling gap, not capability", "source": 5 }
+  ],
+  "sections": [
+    {
+      "id": "leaderboard",
+      "category": "trends",
+      "heading": "Who's on top this month",
+      "paragraphs": [
+        "Closed models still lead on raw capability. Anthropic's Claude Opus 5.5 tops the Artificial Analysis Intelligence Index at 58. OpenAI's GPT-6 Astra, launched September 3, is next at 53, and Meta's proprietary Muse Spark 1.3 follows at 48 [^1] [^4].",
+        "The open-weight pack is close behind and crowded. **Xiaomi's MiMo-V2.6-Pro (46)**, Z AI's GLM-5.3 (45) and Moonshot's Kimi K3 (44) are the strongest models you can download and run yourself [^2]. They score level with SpaceXAI's Grok 4.7 and Alibaba's closed Qwen3.8 Max [^1].",
+        "Google's highest-ranked current model on the index is Gemini 3.8 Flash at 41 [^1]. The index weighs agentic and knowledge-work tasks heavily, so treat it as one lens, not a verdict."
+      ],
+      "infographic": {
+        "type": "bar",
+        "title": "Closed leads, but open is in the pack",
+        "subtitle": "Best model from each lab, Artificial Analysis Intelligence Index v4.3.2 (higher is better)",
+        "groups": ["Open weights", "Closed"],
+        "data": [
+          { "label": "Claude Opus 5.5 · Anthropic", "value": 58, "group": "Closed" },
+          { "label": "GPT-6 Astra · OpenAI", "value": 53, "group": "Closed" },
+          { "label": "Muse Spark 1.3 · Meta", "value": 48, "group": "Closed" },
+          { "label": "MiMo-V2.6-Pro · Xiaomi", "value": 46, "group": "Open weights" },
+          { "label": "Grok 4.7 · SpaceXAI", "value": 46, "group": "Closed" },
+          { "label": "GLM-5.3 · Z AI", "value": 45, "group": "Open weights" },
+          { "label": "Qwen3.8 Max · Alibaba", "value": 45, "group": "Closed" },
+          { "label": "Kimi K3 · Moonshot", "value": 44, "group": "Open weights" },
+          { "label": "Gemini 3.8 Flash · Google", "value": 41, "group": "Closed" },
+          { "label": "DeepSeek V4.1 Flash · DeepSeek", "value": 39, "group": "Open weights" }
+        ],
+        "sources": [1, 2],
+        "note": "Highest-effort setting for each model; accessed Sep 28, 2026"
+      }
+    },
+    {
+      "id": "four-month-gap",
+      "category": "insights",
+      "heading": "The gap is measured in months, not years",
+      "paragraphs": [
+        "Epoch AI finds that since January 2026, the best open-weight models have trailed the best closed models by **about four months** on its capabilities index. That's slightly more than the three-month lag it measured through October 2025 [^3].",
+        "Epoch also warns that the figure probably understates the real distance. Open models tend to optimize for public benchmarks, while closed labs hold back their strongest internal systems [^3].",
+        "Mozilla's State of Open Source AI report makes the gap concrete. It fits a lag of about 4.4 months on METR's task-length data: closed models can handle 8 to 12 hour tasks, and open models get there about four months later [^5]. For most everyday work, that gap doesn't matter. For the hardest, longest tasks, it does."
+      ]
+    },
+    {
+      "id": "cost-per-task",
+      "category": "ai-tech",
+      "heading": "Open isn't automatically cheaper",
+      "paragraphs": [
+        "Price per token is the wrong number to compare. What matters is **cost per task**, which depends on both the price and how many tokens a model burns thinking. Among models scoring 44 to 46 on the index, cost per task runs from $0.13 to $5.41 [^1].",
+        "The cheapest is open: MiMo-V2.6-Pro, at $0.13 [^1]. But GLM-5.3 and Kimi K3, both open, cost about $2 per task, more than twice the $0.82 of GPT-6 Astra on its low setting, which is closed and scores higher (46) [^1]. Run your own workload through both kinds before assuming that open saves money."
+      ],
+      "infographic": {
+        "type": "bar",
+        "title": "Same score, a 40x-plus range in cost",
+        "subtitle": "Cost per task (USD) in Artificial Analysis's evaluation suite, models scoring 44–46 on its index",
+        "prefix": "$",
+        "groups": ["Open weights", "Closed"],
+        "data": [
+          { "label": "MiMo-V2.6-Pro (46)", "value": 0.13, "group": "Open weights" },
+          { "label": "GPT-6 Astra, low (46)", "value": 0.82, "group": "Closed" },
+          { "label": "Muse Spark 1.3, xhigh (45)", "value": 1.37, "group": "Closed" },
+          { "label": "Kimi K3, max (44)", "value": 2.0, "group": "Open weights" },
+          { "label": "GLM-5.3, max (45)", "value": 2.01, "group": "Open weights" },
+          { "label": "Grok 4.7, high (46)", "value": 2.73, "group": "Closed" },
+          { "label": "Qwen3.8 Max (45)", "value": 5.41, "group": "Closed" }
+        ],
+        "sources": [1],
+        "note": "Intelligence Index score in brackets; API list prices"
+      }
+    },
+    {
+      "id": "volume-vs-value",
+      "category": "news",
+      "heading": "Open models win the volume, closed models win the money",
+      "paragraphs": [
+        "On Vercel's AI Gateway, open-weight models went from 7% of tokens in December to 13% in April and **56% in August**, the first month they carried the majority. But they accounted for only 14% of spend, and Anthropic alone kept 64% [^4]. Teams send bulk work to cheap open models and pay for closed ones where quality matters.",
+        "OpenRouter shows the same pattern. Eight of its top ten models by token volume in August were open-weight, and seven of those eight were built in China [^5]. On August 3, DeepSeek became the first open-model maker to rank first on the platform by requests [^5].",
+        "Deployment is the bottleneck. Developers take open models to production 12 percentage points less often than closed ones, and Mozilla's survey with SlashData traces the gap to tooling, not capability [^5]. Enterprise spending still leans heavily closed: as of December 2025, open-source models had just 11% of enterprise LLM usage, down from 19% [^6]."
+      ],
+      "infographic": {
+        "type": "line",
+        "title": "Open-weight models now carry most of the tokens",
+        "subtitle": "Open-weight share of token volume on Vercel's AI Gateway",
+        "unit": "%",
+        "x": ["Dec 2025", "Apr 2026", "Aug 2026"],
+        "series": [ { "name": "Open-weight share of tokens", "values": [7, 13, 56] } ],
+        "sources": [4],
+        "note": "Share of spend in Aug 2026 was 14%; Vercel broadened its open-weight definition in recent reports"
+      }
+    },
+    {
+      "id": "how-to-choose",
+      "category": "insights",
+      "heading": "How to choose",
+      "paragraphs": [
+        "Open weights mean you can download the model, host it on your own infrastructure and fine-tune it [^2]. Closed models give you the frontier and a managed service. Most teams will end up using both."
+      ],
+      "infographic": {
+        "type": "comparison",
+        "title": "Route by task, not by loyalty",
+        "subtitle": "A practical split for September 2026",
+        "columns": [
+          { "name": "Reach for open weights", "points": ["High-volume, routine work such as extraction, classification and first drafts", "Data that must stay on your own infrastructure", "When you need to fine-tune on your own data", "When your measured cost per task is actually lower", "When your team can own the deployment tooling"] },
+          { "name": "Reach for closed models", "points": ["The hardest, longest tasks, such as multi-hour agent runs", "When you need frontier capability now, not in four months", "When you have little capacity to run infrastructure", "When managed security, support and compliance matter", "Low-volume, high-stakes calls where quality beats price"] }
+        ],
+        "sources": [2, 3, 5]
+      }
+    }
+  ],
+  "takeaways": [
+    "**Route by difficulty.** Send bulk, routine work to open models and escalate to closed ones for the hardest tasks. That's what gateway traffic already shows teams doing [^4].",
+    "**Benchmark cost per task, not price per token.** Open and closed models at the same score differ by more than 40x in cost [^1].",
+    "**Budget for tooling.** The main thing keeping open models out of production is tooling, not model quality [^5].",
+    "**Re-test every quarter.** With a gap of about four months, today's closed-only capability is likely to be available open by early 2027 [^3].",
+    "**Mind where your model comes from.** Seven of the eight most-used open models on OpenRouter are Chinese-built, so check the licence and your compliance requirements before deploying [^5]."
+  ],
+  "sources": [
+    { "id": 1, "title": "LLM Leaderboard: Comparison of AI models (Intelligence Index v4.3.2)", "publisher": "Artificial Analysis", "url": "https://artificialanalysis.ai/leaderboards/models", "date": "Accessed Sep 28, 2026" },
+    { "id": 2, "title": "Comparison of Open Source AI Models", "publisher": "Artificial Analysis", "url": "https://artificialanalysis.ai/models/open-source", "date": "Accessed Sep 28, 2026" },
+    { "id": 3, "title": "Open models lag state-of-the-art closed models by 4 months", "publisher": "Epoch AI", "url": "https://epoch.ai/data-insights/open-closed-eci-gap", "date": "May 29, 2026" },
+    { "id": 4, "title": "Open-weight models take 56% of token volume, Astra doubles Fable 5.1 spend", "publisher": "Vercel", "url": "https://vercel.com/blog/ai-gateway-production-index-september-2026", "date": "Sep 17, 2026" },
+    { "id": 5, "title": "The State of Open Source AI, v1.1", "publisher": "Mozilla", "url": "https://stateofopensource.ai/", "date": "Sep 2026" },
+    { "id": 6, "title": "2025: The State of Generative AI in the Enterprise", "publisher": "Menlo Ventures", "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/", "date": "Dec 9, 2025" }
+  ]
+}

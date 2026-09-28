@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open models do most of the work. Closed models still get paid · AI Daily</title>
+<meta name="description" content="Open-weight AI now handles most developer tokens and runs about four months behind the frontier. It wins on price for some jobs but not all. Here&#39;s how to choose.">
+<link rel="canonical" href="https://akank-26.github.io/ai-first/issues/2026-09-28-open-vs-closed-models/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Daily">
+<meta property="og:title" content="Open models do most of the work. Closed models still get paid">
+<meta property="og:description" content="Open-weight AI now handles most developer tokens and runs about four months behind the frontier. It wins on price for some jobs but not all. Here&#39;s how to choose.">
+<meta property="og:image" content="https://akank-26.github.io/ai-first/issues/2026-09-28-open-vs-closed-models/og.png">
+<meta property="og:url" content="https://akank-26.github.io/ai-first/issues/2026-09-28-open-vs-closed-models/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-09-28">
+<meta name="theme-color" content="#F7F6EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/app_icon_32.png">
+<link rel="apple-touch-icon" href="../../assets/app_icon_180.png">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="../../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="masthead">
+  <a class="brand" href="../../" aria-label="AI Daily home">
+    <picture>
+      <source srcset="../../assets/logo_mark_light.png" media="(prefers-color-scheme: dark)">
+      <img class="brand-mark" src="../../assets/logo_mark.png" alt="" width="44" height="38">
+    </picture>
+    <span class="brand-text">
+      <span class="wordmark">AI DAILY</span>
+      <span class="tagline">Smarter insights. Every day.</span>
+    </span>
+  </a>
+  <span class="issue-no">Issue 2</span>
+</header>
+<hr class="accent-line">
+
+<main class="issue">
+  <header class="hero">
+    <p class="meta"><span class="badge">AI DAILY</span>
+      <time datetime="2026-09-28">September 28, 2026</time>
+      <span aria-hidden="true">·</span> 3 min read</p>
+    <h1>Open models do most of the work. Closed models still get paid</h1>
+    <p class="dek">Open-weight AI now handles most developer tokens and runs about four months behind the frontier. It wins on price for some jobs but not all. Here's how to choose.</p>
+  </header>
+
+  <aside class="tldr" aria-labelledby="tldr-h">
+    <h2 id="tldr-h">TL;DR</h2>
+    <ul><li>Closed models still hold the top spot: Claude Opus 5.5 scores 58 on the Artificial Analysis Intelligence Index, and the best open model, Xiaomi's MiMo-V2.6-Pro, scores 46<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup><sup class="cite"><a href="#src-2" aria-label="Source 2">2</a></sup>.</li><li>The gap is about four months. Open models match what closed models could do a season earlier<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup>.</li><li>In August, open-weight models ran 56% of tokens on Vercel's AI Gateway but took only 14% of the spend<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup>.</li></ul>
+  </aside>
+
+  
+  <section class="key-numbers" aria-labelledby="kn-h">
+    <h2 id="kn-h" class="eyebrow-h">Key numbers</h2>
+    <div class="stat-row n4"><div class="stat"><span class="stat-value long">58 vs 46</span><span class="stat-label">Top closed vs top open model score</span><span class="stat-context">Artificial Analysis Intelligence Index</span><a class="stat-src" href="#src-1">Artificial Analysis [1]</a></div><div class="stat"><span class="stat-value long">~4 mo</span><span class="stat-label">How far open models trail the frontier</span><span class="stat-context">average since Jan 2026</span><a class="stat-src" href="#src-3">Epoch AI [3]</a></div><div class="stat"><span class="stat-value long">56% / 14%</span><span class="stat-label">Open-weight share of tokens vs spend</span><span class="stat-context">Vercel AI Gateway, Aug 2026</span><a class="stat-src" href="#src-4">Vercel [4]</a></div><div class="stat"><span class="stat-value long">12 pts</span><span class="stat-label">How much less often open models reach production</span><span class="stat-context">a tooling gap, not capability</span><a class="stat-src" href="#src-5">Mozilla [5]</a></div></div>
+  </section>
+  
+
+  
+  <section class="story" id="leaderboard">
+    <p class="eyebrow cat-trends"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><rect x="5.5" y="13" width="3" height="5" rx=".5"/><rect x="10.5" y="9" width="3" height="9" rx=".5"/><rect x="15.5" y="5" width="3" height="13" rx=".5"/></svg><span>Trends</span></p>
+    <h2>Who's on top this month</h2>
+    <p>Closed models still lead on raw capability. Anthropic's Claude Opus 5.5 tops the Artificial Analysis Intelligence Index at 58. OpenAI's GPT-6 Astra, launched September 3, is next at 53, and Meta's proprietary Muse Spark 1.3 follows at 48<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup><sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup>.</p><p>The open-weight pack is close behind and crowded. <strong>Xiaomi's MiMo-V2.6-Pro (46)</strong>, Z AI's GLM-5.3 (45) and Moonshot's Kimi K3 (44) are the strongest models you can download and run yourself<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a></sup>. They score level with SpaceXAI's Grok 4.7 and Alibaba's closed Qwen3.8 Max<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>.</p><p>Google's highest-ranked current model on the index is Gemini 3.8 Flash at 41<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>. The index weighs agentic and knowledge-work tasks heavily, so treat it as one lens, not a verdict.</p>
+    <figure class="viz viz-bar"><figcaption class="viz-head"><h3 class="viz-title">Closed leads, but open is in the pack</h3><p class="viz-sub">Best model from each lab, Artificial Analysis Intelligence Index v4.3.2 (higher is better)</p></figcaption><ul class="viz-legend swatch"><li><span class="key s1"></span>Open weights</li><li><span class="key s2"></span>Closed</li></ul><div class="bars" role="img" aria-label="Closed leads, but open is in the pack: Claude Opus 5.5 · Anthropic (Closed) 58; GPT-6 Astra · OpenAI (Closed) 53; Muse Spark 1.3 · Meta (Closed) 48; MiMo-V2.6-Pro · Xiaomi (Open weights) 46; Grok 4.7 · SpaceXAI (Closed) 46; GLM-5.3 · Z AI (Open weights) 45; Qwen3.8 Max · Alibaba (Closed) 45; Kimi K3 · Moonshot (Open weights) 44; Gemini 3.8 Flash · Google (Closed) 41; DeepSeek V4.1 Flash · DeepSeek (Open weights) 39"><div class="bar-row" title="Claude Opus 5.5 · Anthropic (Closed): 58"><span class="bar-label">Claude Opus 5.5 · Anthropic</span><span class="bar-track"><span class="bar s2" style="--w:100.00%"></span><span class="bar-value">58</span></span></div><div class="bar-row" title="GPT-6 Astra · OpenAI (Closed): 53"><span class="bar-label">GPT-6 Astra · OpenAI</span><span class="bar-track"><span class="bar s2" style="--w:91.38%"></span><span class="bar-value">53</span></span></div><div class="bar-row" title="Muse Spark 1.3 · Meta (Closed): 48"><span class="bar-label">Muse Spark 1.3 · Meta</span><span class="bar-track"><span class="bar s2" style="--w:82.76%"></span><span class="bar-value">48</span></span></div><div class="bar-row" title="MiMo-V2.6-Pro · Xiaomi (Open weights): 46"><span class="bar-label">MiMo-V2.6-Pro · Xiaomi</span><span class="bar-track"><span class="bar s1" style="--w:79.31%"></span><span class="bar-value">46</span></span></div><div class="bar-row" title="Grok 4.7 · SpaceXAI (Closed): 46"><span class="bar-label">Grok 4.7 · SpaceXAI</span><span class="bar-track"><span class="bar s2" style="--w:79.31%"></span><span class="bar-value">46</span></span></div><div class="bar-row" title="GLM-5.3 · Z AI (Open weights): 45"><span class="bar-label">GLM-5.3 · Z AI</span><span class="bar-track"><span class="bar s1" style="--w:77.59%"></span><span class="bar-value">45</span></span></div><div class="bar-row" title="Qwen3.8 Max · Alibaba (Closed): 45"><span class="bar-label">Qwen3.8 Max · Alibaba</span><span class="bar-track"><span class="bar s2" style="--w:77.59%"></span><span class="bar-value">45</span></span></div><div class="bar-row" title="Kimi K3 · Moonshot (Open weights): 44"><span class="bar-label">Kimi K3 · Moonshot</span><span class="bar-track"><span class="bar s1" style="--w:75.86%"></span><span class="bar-value">44</span></span></div><div class="bar-row" title="Gemini 3.8 Flash · Google (Closed): 41"><span class="bar-label">Gemini 3.8 Flash · Google</span><span class="bar-track"><span class="bar s2" style="--w:70.69%"></span><span class="bar-value">41</span></span></div><div class="bar-row" title="DeepSeek V4.1 Flash · DeepSeek (Open weights): 39"><span class="bar-label">DeepSeek V4.1 Flash · DeepSeek</span><span class="bar-track"><span class="bar s1" style="--w:67.24%"></span><span class="bar-value">39</span></span></div></div><footer class="viz-foot">Sources: <a href="#src-1">Artificial Analysis [1]</a>, <a href="#src-2">Artificial Analysis [2]</a> · Highest-effort setting for each model; accessed Sep 28, 2026</footer><details class="viz-table"><summary>View data</summary><div class="table-wrap"><table><thead><tr><th scope="col">Item</th><th scope="col">Group</th><th scope="col">Value</th></tr></thead><tbody><tr><td>Claude Opus 5.5 · Anthropic</td><td>Closed</td><td>58</td></tr><tr><td>GPT-6 Astra · OpenAI</td><td>Closed</td><td>53</td></tr><tr><td>Muse Spark 1.3 · Meta</td><td>Closed</td><td>48</td></tr><tr><td>MiMo-V2.6-Pro · Xiaomi</td><td>Open weights</td><td>46</td></tr><tr><td>Grok 4.7 · SpaceXAI</td><td>Closed</td><td>46</td></tr><tr><td>GLM-5.3 · Z AI</td><td>Open weights</td><td>45</td></tr><tr><td>Qwen3.8 Max · Alibaba</td><td>Closed</td><td>45</td></tr><tr><td>Kimi K3 · Moonshot</td><td>Open weights</td><td>44</td></tr><tr><td>Gemini 3.8 Flash · Google</td><td>Closed</td><td>41</td></tr><tr><td>DeepSeek V4.1 Flash · DeepSeek</td><td>Open weights</td><td>39</td></tr></tbody></table></div></details></figure>
+  </section>
+  
+  <section class="story" id="four-month-gap">
+    <p class="eyebrow cat-insights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17h6M10 20.5h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3V17h6v-1.9c0-.5.2-1 .6-1.3A6 6 0 0 0 12 3z"/></svg><span>Insights</span></p>
+    <h2>The gap is measured in months, not years</h2>
+    <p>Epoch AI finds that since January 2026, the best open-weight models have trailed the best closed models by <strong>about four months</strong> on its capabilities index. That's slightly more than the three-month lag it measured through October 2025<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup>.</p><p>Epoch also warns that the figure probably understates the real distance. Open models tend to optimize for public benchmarks, while closed labs hold back their strongest internal systems<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup>.</p><p>Mozilla's State of Open Source AI report makes the gap concrete. It fits a lag of about 4.4 months on METR's task-length data: closed models can handle 8 to 12 hour tasks, and open models get there about four months later<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>. For most everyday work, that gap doesn't matter. For the hardest, longest tasks, it does.</p>
+    
+  </section>
+  
+  <section class="story" id="cost-per-task">
+    <p class="eyebrow cat-ai-tech"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.5a3 3 0 0 0-5.6-1.4A3 3 0 0 0 4 8.5a3 3 0 0 0-.5 5 3.2 3.2 0 0 0 2.2 5 3 3 0 0 0 6.3.9"/><path d="M12 5.5a3 3 0 0 1 5.6-1.4A3 3 0 0 1 20 8.5a3 3 0 0 1 .5 5 3.2 3.2 0 0 1-2.2 5 3 3 0 0 1-6.3.9"/><path d="M12 5.5v14"/><path d="M8.5 9.5c1 .2 1.8 1 2 2M15.5 9.5c-1 .2-1.8 1-2 2M8 15c1-.3 2.2 0 3 .8M16 15c-1-.3-2.2 0-3 .8"/></svg><span>AI &amp; Tech</span></p>
+    <h2>Open isn't automatically cheaper</h2>
+    <p>Price per token is the wrong number to compare. What matters is <strong>cost per task</strong>, which depends on both the price and how many tokens a model burns thinking. Among models scoring 44 to 46 on the index, cost per task runs from $0.13 to $5.41<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>.</p><p>The cheapest is open: MiMo-V2.6-Pro, at $0.13<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>. But GLM-5.3 and Kimi K3, both open, cost about $2 per task, more than twice the $0.82 of GPT-6 Astra on its low setting, which is closed and scores higher (46)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>. Run your own workload through both kinds before assuming that open saves money.</p>
+    <figure class="viz viz-bar"><figcaption class="viz-head"><h3 class="viz-title">Same score, a 40x-plus range in cost</h3><p class="viz-sub">Cost per task (USD) in Artificial Analysis&#x27;s evaluation suite, models scoring 44–46 on its index</p></figcaption><ul class="viz-legend swatch"><li><span class="key s1"></span>Open weights</li><li><span class="key s2"></span>Closed</li></ul><div class="bars" role="img" aria-label="Same score, a 40x-plus range in cost: MiMo-V2.6-Pro (46) (Open weights) $0.13; GPT-6 Astra, low (46) (Closed) $0.82; Muse Spark 1.3, xhigh (45) (Closed) $1.37; Kimi K3, max (44) (Open weights) $2.00; GLM-5.3, max (45) (Open weights) $2.01; Grok 4.7, high (46) (Closed) $2.73; Qwen3.8 Max (45) (Closed) $5.41"><div class="bar-row" title="MiMo-V2.6-Pro (46) (Open weights): $0.13"><span class="bar-label">MiMo-V2.6-Pro (46)</span><span class="bar-track"><span class="bar s1" style="--w:2.40%"></span><span class="bar-value">$0.13</span></span></div><div class="bar-row" title="GPT-6 Astra, low (46) (Closed): $0.82"><span class="bar-label">GPT-6 Astra, low (46)</span><span class="bar-track"><span class="bar s2" style="--w:15.16%"></span><span class="bar-value">$0.82</span></span></div><div class="bar-row" title="Muse Spark 1.3, xhigh (45) (Closed): $1.37"><span class="bar-label">Muse Spark 1.3, xhigh (45)</span><span class="bar-track"><span class="bar s2" style="--w:25.32%"></span><span class="bar-value">$1.37</span></span></div><div class="bar-row" title="Kimi K3, max (44) (Open weights): $2.00"><span class="bar-label">Kimi K3, max (44)</span><span class="bar-track"><span class="bar s1" style="--w:36.97%"></span><span class="bar-value">$2.00</span></span></div><div class="bar-row" title="GLM-5.3, max (45) (Open weights): $2.01"><span class="bar-label">GLM-5.3, max (45)</span><span class="bar-track"><span class="bar s1" style="--w:37.15%"></span><span class="bar-value">$2.01</span></span></div><div class="bar-row" title="Grok 4.7, high (46) (Closed): $2.73"><span class="bar-label">Grok 4.7, high (46)</span><span class="bar-track"><span class="bar s2" style="--w:50.46%"></span><span class="bar-value">$2.73</span></span></div><div class="bar-row" title="Qwen3.8 Max (45) (Closed): $5.41"><span class="bar-label">Qwen3.8 Max (45)</span><span class="bar-track"><span class="bar s2" style="--w:100.00%"></span><span class="bar-value">$5.41</span></span></div></div><footer class="viz-foot">Source: <a href="#src-1">Artificial Analysis [1]</a> · Intelligence Index score in brackets; API list prices</footer><details class="viz-table"><summary>View data</summary><div class="table-wrap"><table><thead><tr><th scope="col">Item</th><th scope="col">Group</th><th scope="col">Value</th></tr></thead><tbody><tr><td>MiMo-V2.6-Pro (46)</td><td>Open weights</td><td>$0.13</td></tr><tr><td>GPT-6 Astra, low (46)</td><td>Closed</td><td>$0.82</td></tr><tr><td>Muse Spark 1.3, xhigh (45)</td><td>Closed</td><td>$1.37</td></tr><tr><td>Kimi K3, max (44)</td><td>Open weights</td><td>$2.00</td></tr><tr><td>GLM-5.3, max (45)</td><td>Open weights</td><td>$2.01</td></tr><tr><td>Grok 4.7, high (46)</td><td>Closed</td><td>$2.73</td></tr><tr><td>Qwen3.8 Max (45)</td><td>Closed</td><td>$5.41</td></tr></tbody></table></div></details></figure>
+  </section>
+  
+  <section class="story" id="volume-vs-value">
+    <p class="eyebrow cat-news"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 11h7M9 14h7M9 17h4"/></svg><span>News</span></p>
+    <h2>Open models win the volume, closed models win the money</h2>
+    <p>On Vercel's AI Gateway, open-weight models went from 7% of tokens in December to 13% in April and <strong>56% in August</strong>, the first month they carried the majority. But they accounted for only 14% of spend, and Anthropic alone kept 64%<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup>. Teams send bulk work to cheap open models and pay for closed ones where quality matters.</p><p>OpenRouter shows the same pattern. Eight of its top ten models by token volume in August were open-weight, and seven of those eight were built in China<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>. On August 3, DeepSeek became the first open-model maker to rank first on the platform by requests<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>.</p><p>Deployment is the bottleneck. Developers take open models to production 12 percentage points less often than closed ones, and Mozilla's survey with SlashData traces the gap to tooling, not capability<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>. Enterprise spending still leans heavily closed: as of December 2025, open-source models had just 11% of enterprise LLM usage, down from 19%<sup class="cite"><a href="#src-6" aria-label="Source 6">6</a></sup>.</p>
+    <figure class="viz viz-line"><figcaption class="viz-head"><h3 class="viz-title">Open-weight models now carry most of the tokens</h3><p class="viz-sub">Open-weight share of token volume on Vercel&#x27;s AI Gateway</p></figcaption><div class="line-chart" role="img" aria-label="Open-weight models now carry most of the tokens. Open-weight share of tokens: 7% in Dec 2025 to 56% in Aug 2026"><div class="y-axis"><span class="y-tick" style="top:100.000%">0%</span><span class="y-tick" style="top:66.667%">20%</span><span class="y-tick" style="top:33.333%">40%</span><span class="y-tick" style="top:0.000%">60%</span></div><div class="plot"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line class="grid" x1="0" x2="100" y1="100.000" y2="100.000"/><line class="grid" x1="0" x2="100" y1="66.667" y2="66.667"/><line class="grid" x1="0" x2="100" y1="33.333" y2="33.333"/><line class="grid" x1="0" x2="100" y1="0.000" y2="0.000"/><path class="line s1" d="M0.000,88.333 L50.000,78.333 L100.000,6.667"/></svg><span class="hit" style="left:0.000%;top:88.333%" title="Dec 2025 · Open-weight share of tokens: 7%"></span><span class="hit" style="left:50.000%;top:78.333%" title="Apr 2026 · Open-weight share of tokens: 13%"></span><span class="hit" style="left:100.000%;top:6.667%" title="Aug 2026 · Open-weight share of tokens: 56%"></span><span class="end-dot s1" style="left:100.000%;top:6.667%"></span><span class="end-label" style="top:6.667%">56%</span></div><div class="x-axis"><span class="x-tick" style="left:0.000%">Dec 2025</span><span class="x-tick" style="left:50.000%">Apr 2026</span><span class="x-tick" style="left:100.000%">Aug 2026</span></div></div><footer class="viz-foot">Source: <a href="#src-4">Vercel [4]</a> · Share of spend in Aug 2026 was 14%; Vercel broadened its open-weight definition in recent reports</footer><details class="viz-table"><summary>View data</summary><div class="table-wrap"><table><thead><tr><th scope="col">Period</th><th scope="col">Open-weight share of tokens</th></tr></thead><tbody><tr><td>Dec 2025</td><td>7%</td></tr><tr><td>Apr 2026</td><td>13%</td></tr><tr><td>Aug 2026</td><td>56%</td></tr></tbody></table></div></details></figure>
+  </section>
+  
+  <section class="story" id="how-to-choose">
+    <p class="eyebrow cat-insights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17h6M10 20.5h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3V17h6v-1.9c0-.5.2-1 .6-1.3A6 6 0 0 0 12 3z"/></svg><span>Insights</span></p>
+    <h2>How to choose</h2>
+    <p>Open weights mean you can download the model, host it on your own infrastructure and fine-tune it<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a></sup>. Closed models give you the frontier and a managed service. Most teams will end up using both.</p>
+    <figure class="viz viz-compare"><figcaption class="viz-head"><h3 class="viz-title">Route by task, not by loyalty</h3><p class="viz-sub">A practical split for September 2026</p></figcaption><div class="cmp-grid cols-2"><div class="cmp-col"><h4>Reach for open weights</h4><ul><li>High-volume, routine work such as extraction, classification and first drafts</li><li>Data that must stay on your own infrastructure</li><li>When you need to fine-tune on your own data</li><li>When your measured cost per task is actually lower</li><li>When your team can own the deployment tooling</li></ul></div><div class="cmp-col"><h4>Reach for closed models</h4><ul><li>The hardest, longest tasks, such as multi-hour agent runs</li><li>When you need frontier capability now, not in four months</li><li>When you have little capacity to run infrastructure</li><li>When managed security, support and compliance matter</li><li>Low-volume, high-stakes calls where quality beats price</li></ul></div></div><footer class="viz-foot">Sources: <a href="#src-2">Artificial Analysis [2]</a>, <a href="#src-3">Epoch AI [3]</a>, <a href="#src-5">Mozilla [5]</a></footer></figure>
+  </section>
+  
+
+  
+  <section class="takeaways" aria-labelledby="tw-h">
+    <h2 id="tw-h">What to watch</h2>
+    <ol><li><strong>Route by difficulty.</strong> Send bulk, routine work to open models and escalate to closed ones for the hardest tasks. That's what gateway traffic already shows teams doing<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup>.</li><li><strong>Benchmark cost per task, not price per token.</strong> Open and closed models at the same score differ by more than 40x in cost<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup>.</li><li><strong>Budget for tooling.</strong> The main thing keeping open models out of production is tooling, not model quality<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>.</li><li><strong>Re-test every quarter.</strong> With a gap of about four months, today's closed-only capability is likely to be available open by early 2027<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup>.</li><li><strong>Mind where your model comes from.</strong> Seven of the eight most-used open models on OpenRouter are Chinese-built, so check the licence and your compliance requirements before deploying<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup>.</li></ol>
+  </section>
+  
+
+  <section class="sources" aria-labelledby="src-h">
+    <h2 id="src-h" class="eyebrow-h">Sources</h2>
+    <ol>
+    
+      <li id="src-1" value="1"><a href="https://artificialanalysis.ai/leaderboards/models">LLM Leaderboard: Comparison of AI models (Intelligence Index v4.3.2)</a>
+        <span class="src-meta">Artificial Analysis · Accessed Sep 28, 2026</span></li>
+    
+      <li id="src-2" value="2"><a href="https://artificialanalysis.ai/models/open-source">Comparison of Open Source AI Models</a>
+        <span class="src-meta">Artificial Analysis · Accessed Sep 28, 2026</span></li>
+    
+      <li id="src-3" value="3"><a href="https://epoch.ai/data-insights/open-closed-eci-gap">Open models lag state-of-the-art closed models by 4 months</a>
+        <span class="src-meta">Epoch AI · May 29, 2026</span></li>
+    
+      <li id="src-4" value="4"><a href="https://vercel.com/blog/ai-gateway-production-index-september-2026">Open-weight models take 56% of token volume, Astra doubles Fable 5.1 spend</a>
+        <span class="src-meta">Vercel · Sep 17, 2026</span></li>
+    
+      <li id="src-5" value="5"><a href="https://stateofopensource.ai/">The State of Open Source AI, v1.1</a>
+        <span class="src-meta">Mozilla · Sep 2026</span></li>
+    
+      <li id="src-6" value="6"><a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/">2025: The State of Generative AI in the Enterprise</a>
+        <span class="src-meta">Menlo Ventures · Dec 9, 2025</span></li>
+    
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <hr class="accent-line">
+  <picture>
+    <source srcset="../../assets/logo_stacked_light.png" media="(prefers-color-scheme: dark)">
+    <img class="footer-logo" src="../../assets/logo_stacked.png" alt="AI Daily" width="120">
+  </picture>
+  <p class="tagline">Smarter insights. Every day.</p>
+  <p class="footer-links"><a href="../../">All issues</a> <span aria-hidden="true">·</span> <a href="../../feed.xml">RSS</a></p>
+</footer>
+</body>
+</html>

@@ -156,6 +156,9 @@ sup.cite a::before { content: "["; } sup.cite a::after { content: "]"; }
 .viz-legend li { display: flex; align-items: center; gap: .4rem; }
 .key { display: inline-block; width: .75rem; height: .75rem; border-radius: 3px; flex: none; }
 .viz-legend .key { height: 3px; width: 1rem; border-radius: 2px; }
+.viz-legend.swatch .key { height: .75rem; width: .75rem; border-radius: 3px; }  /* bar groups: square swatch, not a line key */
+.bar.s2 { background: var(--series-2); }
+.bar.s3 { background: var(--series-3); }
 .key.s1, .bar.s1 { background: var(--series-1); }
 .key.s2 { background: var(--series-2); }
 .key.s3 { background: var(--series-3); }
@@ -240,6 +243,7 @@ sup.cite a::before { content: "["; } sup.cite a::after { content: "]"; }
 }
 .stat::before { content: ""; position: absolute; left: 0; top: 0; right: 0; height: 3px; background: var(--accent); }
 .stat-value { font-size: 2rem; font-weight: 700; line-height: 1.1; letter-spacing: -.02em; color: var(--ink); }
+.stat-value.long { font-size: 1.5rem; white-space: nowrap; }  /* "58 vs 46", "56% / 14%" stay on one line */
 .stat-label { font-size: .85rem; line-height: 1.4; color: var(--ink); }
 .stat-context { font-size: .75rem; color: var(--ink-2); }
 .stat-src { font-size: .7rem; color: var(--ink-2); margin-top: auto; padding-top: .45rem; text-decoration: none; }
