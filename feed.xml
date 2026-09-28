@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>AI Daily</title>
+  <link>https://akank-26.github.io/ai-first/</link>
+  <description>Clear, concise, and credible insights on what matters in AI.</description>
+  <language>en</language>
+  <lastBuildDate>Mon, 28 Sep 2026 15:32:27 +0000</lastBuildDate>
+
+  <item>
+    <title>Agents can work for 12 hours. Most companies can&#39;t use them yet</title>
+    <link>https://akank-26.github.io/ai-first/issues/2026-09-28-agents-in-production/</link>
+    <guid isPermaLink="true">https://akank-26.github.io/ai-first/issues/2026-09-28-agents-in-production/</guid>
+    <pubDate>Mon, 28 Sep 2026 08:00:00 +0000</pubDate>
+    <description>Agent capability is doubling roughly every four months. Enterprise adoption is not, and the gap between the two is where this year&#39;s winners and write-offs will come from.</description>
+  </item>
+
+</channel>
+</rss>

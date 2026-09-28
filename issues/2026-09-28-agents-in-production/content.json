@@ -1,0 +1,130 @@
+{
+  "slug": "agents-in-production",
+  "date": "2026-09-28",
+  "title": "Agents can work for 12 hours. Most companies can't use them yet",
+  "dek": "Agent capability is doubling roughly every four months. Enterprise adoption is not, and the gap between the two is where this year's winners and write-offs will come from.",
+  "tldr": [
+    "The length of task a frontier agent can finish on its own has doubled about every 129 days since 2023, from roughly 4 minutes (GPT-4) to about 12 hours (Claude Opus 4.6) [^1].",
+    "Adoption is far behind: 62% of organizations are at least experimenting with agents, but only 23% are scaling them anywhere [^5].",
+    "Gartner expects over 40% of agentic AI projects to be canceled by the end of 2027. Cost, unclear value and weak risk controls are the reasons, not capability [^3]."
+  ],
+  "key_numbers": [
+    { "value": "~4 mo", "label": "Doubling time of agent task length", "context": "since 2023, METR", "source": 1 },
+    { "value": "23%", "label": "Organizations scaling agents anywhere", "context": "vs 62% experimenting", "source": 5 },
+    { "value": "40%+", "label": "Agentic AI projects Gartner expects canceled", "context": "by end of 2027", "source": 3 },
+    { "value": "$52.6B", "label": "Projected AI agents market", "context": "2030, from $7.8B in 2025", "source": 6 }
+  ],
+  "sections": [
+    {
+      "id": "capability-curve",
+      "category": "trends",
+      "heading": "The capability curve keeps bending up",
+      "paragraphs": [
+        "METR measures agents by the length of task, in human working time, that a model finishes with 50% reliability. On its latest benchmark that *time horizon* went from about 4 minutes for GPT-4 in March 2023 to about 12 hours for Claude Opus 4.6 in February 2026 [^1].",
+        "The pace is getting faster. METR's original 2025 study found a doubling time of about seven months over six years [^2]. Its updated data puts the post-2023 doubling time at **about 129 days**, roughly four months [^1].",
+        "Treat the newest numbers with care. An early Claude Mythos Preview scored above 16 hours, and METR says measurements above 16 hours are unreliable with its current task suite [^1]. The trend is clear. The exact frontier is fuzzy."
+      ],
+      "infographic": {
+        "type": "bar",
+        "title": "From 4 minutes to 12 hours in three years",
+        "subtitle": "Task length (hours of human work) that state-of-the-art agents finish with 50% success, METR Horizon v1.1",
+        "unit": " hrs",
+        "data": [
+          { "label": "GPT-4 · Mar 2023", "value": 0.07 },
+          { "label": "GPT-4o · May 2024", "value": 0.12 },
+          { "label": "o1 · Dec 2024", "value": 0.65 },
+          { "label": "o3 · Apr 2025", "value": 2.0 },
+          { "label": "GPT-5 · Aug 2025", "value": 3.4 },
+          { "label": "GPT-5.2 · Dec 2025", "value": 5.9 },
+          { "label": "Claude Opus 4.6 · Feb 2026", "value": 12.0 }
+        ],
+        "highlight": "Claude Opus 4.6 · Feb 2026",
+        "sources": [1],
+        "note": "Values rounded; Claude Mythos Preview (>16 hrs) omitted as beyond METR's reliable range"
+      }
+    },
+    {
+      "id": "adoption-gap",
+      "category": "insights",
+      "heading": "Adoption is wide but shallow",
+      "paragraphs": [
+        "McKinsey's 2025 State of AI survey shows how thinly this spreads inside companies. 88% of organizations use AI in at least one business function, and 62% are at least experimenting with agents. Only 23% are scaling agentic systems anywhere in the business [^5].",
+        "Value is rarer still. Only 39% report *any* EBIT impact from AI, and about 6% are high performers that attribute more than 5% of EBIT to it [^5]. Those high performers were 2.8x more likely to have redesigned workflows from the ground up [^5]. The model isn't the moat. The process around it is."
+      ],
+      "infographic": {
+        "type": "bar",
+        "title": "Everyone is trying agents; few are scaling them",
+        "subtitle": "Share of organizations, McKinsey State of AI 2025",
+        "unit": "%",
+        "data": [
+          { "label": "Use AI in at least one function", "value": 88 },
+          { "label": "Use generative AI", "value": 72 },
+          { "label": "At least experimenting with agents", "value": 62 },
+          { "label": "Any EBIT impact from AI", "value": 39 },
+          { "label": "Scaling agents somewhere", "value": 23 },
+          { "label": "High performers (>5% of EBIT from AI)", "value": 6 }
+        ],
+        "highlight": "Scaling agents somewhere",
+        "sources": [5],
+        "note": "Figures as reported by CX Today"
+      }
+    },
+    {
+      "id": "cancellation-wave",
+      "category": "news",
+      "heading": "A cancellation wave is coming",
+      "paragraphs": [
+        "Gartner predicts that over 40% of agentic AI projects will be canceled by the end of 2027. It names escalating costs, unclear business value and inadequate risk controls, not model capability [^3].",
+        "Part of the problem is supply. Gartner calls it *agent washing*: chatbots, RPA and assistants rebranded as agents. It estimates that only about 130 of the thousands of vendors selling agentic AI are the real thing [^3].",
+        "Investment has been cautious from the start. In Gartner's January 2025 poll, only 19% of organizations had made significant investments in agentic AI [^3]."
+      ],
+      "infographic": {
+        "type": "donut",
+        "title": "Most early bets on agents were small",
+        "subtitle": "Agentic AI investment, Gartner poll of 3,412 webinar attendees, January 2025 (older context)",
+        "unit": "%",
+        "data": [
+          { "label": "Significant investment", "value": 19 },
+          { "label": "Conservative investment", "value": 42 },
+          { "label": "Wait and see or unsure", "value": 31 },
+          { "label": "No investment", "value": 8 }
+        ],
+        "sources": [3]
+      }
+    },
+    {
+      "id": "what-survives",
+      "category": "ai-tech",
+      "heading": "What separates the agents that survive",
+      "paragraphs": [
+        "Gartner's reasons for cancellation (cost, value and risk) are the checklist for staying off the list [^3]. On capability, METR's earlier work found that 2025 agents succeeded less than 10% of the time on tasks that take humans more than about four hours [^2]. Long tasks are still where reliability breaks down, so the projects that last are the ones scoped to what agents can reliably do today.",
+        "The bar keeps rising. Gartner expects up to 40% of enterprise apps to include task-specific agents by the end of 2026, up from under 5% in 2025 [^4]. It also predicts that by 2028 at least 15% of day-to-day work decisions will be made autonomously [^3]."
+      ],
+      "infographic": {
+        "type": "comparison",
+        "title": "Demo agent vs. production agent",
+        "subtitle": "What changes when an agent has to survive a budget review",
+        "columns": [
+          { "name": "Demo agent", "points": ["Open-ended goal and tasks of any length", "Cost measured per demo", "Success judged by eye", "No owner for errors or risk"] },
+          { "name": "Production agent", "points": ["Scoped to tasks within today's reliable horizon", "Unit cost tracked against a business metric", "Evaluated continuously on real cases", "Guardrails, audit trail and human escalation"] }
+        ],
+        "sources": [2, 3]
+      }
+    }
+  ],
+  "takeaways": [
+    "**Plan for the curve, build for the floor.** Design workflows around today's reliable task length, and re-test every quarter as horizons double [^1].",
+    "**Tie every agent to one business metric** before scaling. Unclear value is one of the three reasons Gartner gives for cancellation [^3].",
+    "**Redesign the workflow, not just the tool.** High performers were 2.8x more likely to have done so [^5].",
+    "**Check vendors' claims.** Ask for autonomous task length, evaluation results and failure handling. Most \"agents\" on the market aren't agents [^3].",
+    "**Budget for oversight.** Guardrails, audit trails and human escalation are what get an agent past risk review."
+  ],
+  "sources": [
+    { "id": 1, "title": "Task-Completion Time Horizons of Frontier AI Models (Horizon v1.1 data)", "publisher": "METR", "url": "https://metr.org/time-horizons/", "date": "Updated May 8, 2026" },
+    { "id": 2, "title": "Measuring AI Ability to Complete Long Tasks", "publisher": "METR", "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/", "date": "Mar 19, 2025" },
+    { "id": 3, "title": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027", "publisher": "Gartner", "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027", "date": "Jun 25, 2025" },
+    { "id": 4, "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026", "publisher": "Gartner", "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025", "date": "Aug 26, 2025" },
+    { "id": 5, "title": "McKinsey's State of AI: The Scaling Gap Is Now CX's Problem", "publisher": "CX Today", "url": "https://www.cxtoday.com/ai-automation-in-cx/mckinseys-state-of-ai-the-scaling-gap-is-now-cxs-problem/", "date": "Feb 23, 2026" },
+    { "id": 6, "title": "AI Agents Market worth $52.62 billion by 2030", "publisher": "MarketsandMarkets", "url": "https://www.marketsandmarkets.com/PressReleases/ai-agents.asp" }
+  ]
+}
