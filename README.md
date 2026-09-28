@@ -1,3 +1,11 @@
+# AI Newsletter
+
 **Smarter insights. Every day.** Clear, concise and credible insights on what matters in AI.
 
-AI Daily is a newsletter generator driven by an AI agent. You give it a topic. It researches the topic, writes a cited issue with on-brand infographics, and publishes the issue to a static site on GitHub Pages.
+### 👉 Read it at **[akank-26.github.io/ai-first](https://akank-26.github.io/ai-first/)**
+
+Every issue is researched and cited, with infographics built from real data. Follow new issues through the [RSS feed](https://akank-26.github.io/ai-first/feed.xml).
+
+---
+
+This repo holds only the built static site that GitHub Pages serves. Issues are generated elsewhere and pushed here automatically.
